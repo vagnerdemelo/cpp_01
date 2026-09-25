@@ -6,7 +6,7 @@
 #    By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/24 21:13:39 by vade-mel          #+#    #+#              #
-#    Updated: 2026/09/25 12:00:17 by vade-mel         ###   ########.fr        #
+#    Updated: 2026/09/25 12:41:06 by vade-mel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ SRCS := main.cpp \
 		Zombie.cpp
 
 OBJS := $(SRCS:.cpp=.o)
-DEPS = $(OBJS:.o=.d)
+
 .PHONY: all clean fclean re
 
 all: $(NAME)
@@ -30,7 +30,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $@
 
-$(OBJ_FOLDER)%.o: $(SRC_FOLDER)%.cpp | $(OBJ_FOLDER)
+%.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 $(OBJS): $(HEADERS)

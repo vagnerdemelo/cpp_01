@@ -6,7 +6,7 @@
 /*   By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 15:47:27 by vade-mel          #+#    #+#             */
-/*   Updated: 2026/09/25 16:47:00 by vade-mel         ###   ########.fr       */
+/*   Updated: 2026/09/25 17:25:18 by vade-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,8 @@ HumanA::HumanA(std::string humanName, Weapon& weapon)
 
 void HumanA::attack()
 {
-	std::cout << "Attacking with: " << this->weaponType.getType() << std::endl;
+	std::cout	<< this->_name
+				<< " attacks with their "
+				<< this->weaponType.getType()
+				<< std::endl;
 }

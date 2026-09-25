@@ -6,7 +6,7 @@
 /*   By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 15:47:29 by vade-mel          #+#    #+#             */
-/*   Updated: 2026/09/25 17:23:38 by vade-mel         ###   ########.fr       */
+/*   Updated: 2026/09/25 17:25:53 by vade-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,10 @@ HumanB::HumanB(std::string humanName)
 void HumanB::attack()
 {
 	if (this->weaponType != NULL)
-		std::cout << "Attacking with: " << this->weaponType->getType() << std::endl;
+		std::cout	<< this->_name
+					<< " attacks with their "
+					<< this->weaponType->getType()
+					<< std::endl;
 }
 
 void HumanB::setWeapon(Weapon& weapon)

@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/24 21:13:50 by vade-mel          #+#    #+#             */
-/*   Updated: 2026/09/25 12:23:37 by vade-mel         ###   ########.fr       */
+/*   Created: 2026/09/25 09:30:03 by vade-mel          #+#    #+#             */
+/*   Updated: 2026/09/25 12:11:30 by vade-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string name)
+int main (void)
 {
-	this->name = name;
-}
+	randomChump("Steve");
+	Zombie* z = newZombie("Mark");
+	z->announce();
 
-void Zombie::announce(void)
-{
-	std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-}
-
-Zombie::~Zombie()
-{
-	std::cout << this->name << ": Morri (de novo)." << std::endl;
+	delete z;
+	return 0;
 }

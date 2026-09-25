@@ -6,7 +6,14 @@
 /*   By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 21:13:45 by vade-mel          #+#    #+#             */
-/*   Updated: 2026/09/24 21:13:46 by vade-mel         ###   ########.fr       */
+/*   Updated: 2026/09/25 12:24:02 by vade-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Zombie.hpp"
+
+void randomChump( std::string name )
+{
+	Zombie z(name);
+	z.announce();
+}

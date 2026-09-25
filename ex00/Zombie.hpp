@@ -6,7 +6,28 @@
 /*   By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 21:13:48 by vade-mel          #+#    #+#             */
-/*   Updated: 2026/09/24 21:13:49 by vade-mel         ###   ########.fr       */
+/*   Updated: 2026/09/25 12:23:40 by vade-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
+
+#include <string>
+#include <iostream>
+
+class Zombie
+{
+private:
+	std::string name;
+public:
+	Zombie(std::string name);
+	~Zombie();
+
+	void announce ( void );
+};
+
+void randomChump( std::string name );
+Zombie* newZombie( std::string name );
+
+#endif

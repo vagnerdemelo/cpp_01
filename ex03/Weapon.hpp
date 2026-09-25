@@ -6,7 +6,22 @@
 /*   By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 15:46:29 by vade-mel          #+#    #+#             */
-/*   Updated: 2026/09/25 15:46:30 by vade-mel         ###   ########.fr       */
+/*   Updated: 2026/09/25 15:52:54 by vade-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef WEAPON_H
+#define WEAPON_H
+
+#include <string>
+class Weapon
+{
+private:
+	std::string type;
+public:
+	Weapon();
+	std::string getType( void ) const;
+	void setType();
+};
+
+#endif

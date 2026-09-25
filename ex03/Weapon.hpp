@@ -6,7 +6,7 @@
 /*   By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 15:46:29 by vade-mel          #+#    #+#             */
-/*   Updated: 2026/09/25 15:52:54 by vade-mel         ###   ########.fr       */
+/*   Updated: 2026/09/25 16:08:34 by vade-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ private:
 public:
 	Weapon();
 	std::string getType( void ) const;
-	void setType();
+	void setType(std::string type);
 };
 
 #endif

@@ -6,11 +6,11 @@
 #    By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/25 15:34:02 by vade-mel          #+#    #+#              #
-#    Updated: 2026/09/25 15:35:50 by vade-mel         ###   ########.fr        #
+#    Updated: 2026/09/25 15:41:17 by vade-mel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME := ptrAndRef
+NAME := brain
 
 CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98

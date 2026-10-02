@@ -6,7 +6,7 @@
 /*   By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 18:48:26 by vade-mel          #+#    #+#             */
-/*   Updated: 2026/10/02 17:36:59 by vade-mel         ###   ########.fr       */
+/*   Updated: 2026/10/02 17:53:39 by vade-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	if(argc != 4)
 	{
 		std::cerr << "Invalid numbers of params." << std::endl;
-		std::cerr << "run: ./replace <filename> <search> <replace>" << std::endl;
+		std::cerr << "run: ./sed <file> <search> <replace>" << std::endl;
 		return 1;
 	}
 

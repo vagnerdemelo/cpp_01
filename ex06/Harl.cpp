@@ -6,7 +6,7 @@
 /*   By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 18:00:16 by vade-mel          #+#    #+#             */
-/*   Updated: 2026/10/02 23:48:58 by vade-mel         ###   ########.fr       */
+/*   Updated: 2026/10/02 23:52:06 by vade-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void Harl::complain(std::string level)
 		Harl::error();
 		break;
 	default:
-		std::cout << "[ Probably complaining about insignificant problems ]\n" << std::endl;
+		std::cout << "[ Provavelmente reclamando sobre problemas insignificantes ]\n" << std::endl;
 		break;
 	}
 }

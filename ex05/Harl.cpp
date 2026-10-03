@@ -6,7 +6,7 @@
 /*   By: vade-mel <vade-mel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 18:00:16 by vade-mel          #+#    #+#             */
-/*   Updated: 2026/10/02 22:53:02 by vade-mel         ###   ########.fr       */
+/*   Updated: 2026/10/02 23:06:05 by vade-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,10 @@ void Harl::complain(std::string level)
 	for (int i = 0; i < 4; i++)
 	{
 		if (level == level_switch[i])
+		{
 			(this->*f[i])();
+			return;
+		}
 	}
 }
 
